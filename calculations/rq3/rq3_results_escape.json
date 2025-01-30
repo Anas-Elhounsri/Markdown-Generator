@@ -1,0 +1,14 @@
+{
+    "escape": {
+        "rq3-1": {
+            "releases": 88.23529411764706,
+            "consistency": 80.0
+        },
+        "rq3-2": {
+            "semantic": 73.33333333333333,
+            "calendar": 0.0,
+            "Alphanumeric": 26.666666666666668,
+            "other": 0.0
+        }
+    }
+}

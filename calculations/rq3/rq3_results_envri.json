@@ -1,0 +1,14 @@
+{
+    "envri": {
+        "rq3-1": {
+            "releases": 16.015625,
+            "consistency": 80.48780487804879
+        },
+        "rq3-2": {
+            "semantic": 67.07317073170732,
+            "calendar": 0.0,
+            "Alphanumeric": 32.926829268292686,
+            "other": 0.0
+        }
+    }
+}

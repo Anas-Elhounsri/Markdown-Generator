@@ -1,0 +1,19 @@
+{
+    "envri": {
+        "rq4-1": {
+            "long_desc": 88.4765625,
+            "short_desc": 91.9921875,
+            "None": 2.1484375
+        },
+        "rq4-2": {
+            "spdx": 49.21875,
+            "other": 5.078125,
+            "no_license": 45.703125
+        },
+        "rq4-3": {
+            "requirements": 10.546875,
+            "installation": 20.5078125,
+            "documentation": 16.796875
+        }
+    }
+}
