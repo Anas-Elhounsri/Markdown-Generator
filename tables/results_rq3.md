@@ -5,7 +5,7 @@
 | Releases | 88.24% | 61.90% | 16.02% | 85.88% |
 | Consistent Version Naming Scheme | 80.00% | 76.92% | 80.49% | 76.55% |
 
-### RESULTS FOR RQ3: How do projects adopt versioning? (Types of versioning)}
+### RESULTS FOR RQ3: How do projects adopt versioning? (Types of versioning)
 
 | Type of Release | ESCAPE | PANOSC | ENVRI | RSD |
 |-----------------|--------|--------|-------|-----|
