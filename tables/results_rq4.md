@@ -1,4 +1,4 @@
-### RESULTS FOR RQ4-1: How do communities describe their software (short vs long)}
+### RESULTS FOR RQ4-1: How do communities describe their software (short vs long)
 
 | Long vs Short Description     | ESCAPE | PANOSC | ENVRI | RSD |
 |-------------|--------|--------|-------|-----|
@@ -6,14 +6,14 @@
 | Short desc | 94.12% | 80.95% | 91.99% | 90.97% | 
 | None | 0.00% | 9.52% | 2.15% | 1.39% | 
 
-### RESULTS FOR RQ4-2: How do communities adopt licensing their projects?}
+### RESULTS FOR RQ4-2: How do communities adopt licensing their projects?
 
 | Licenses | ESCAPE | PANOSC | ENVRI | RSD |
 |-----------------|--------|--------|-------|-----|
 | Spdx | 94.12% | 80.95% | 49.22% | 94.44% | 
 | Other | 5.88% | 4.76% | 5.08% | 2.08% | 
 | No license | 0.00% | 14.29% | 45.70% | 3.47% | 
-### RESULTS FOR RQ4-3: How well documented are research projects?}}
+### RESULTS FOR RQ4-3: How well documented are research projects?
 
 | Installation Instructions  | ESCAPE | PANOSC | ENVRI | RSD |
 |-----------------|--------|--------|-------|-----|
