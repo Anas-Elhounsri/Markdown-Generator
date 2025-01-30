@@ -10,8 +10,8 @@ The latest version of python.
 
 ## How does it work?
 
-- Run the `main.py` files
-- You will be prompted the following:
+Run the `main.py` files
+You will be prompted the following:
   ```bash
   === Main Menu ===
   1. Generate results for RQ1
@@ -22,9 +22,12 @@ The latest version of python.
   exit. Quit
   Choose an option (1-5/exit): 
   ```
-- After you choose the research question (for example 1) you will get the following:
+
+After you choose the research question (for example 1) you will get the following:
   ```bash
   Running process for RQ1
   Markdown table saved to C: project_directory\readme_generator\README-Generator\tables\results_rq1.md
   Successfully generated results for RQ1.
  ```
+ 
+You will find your results in tables\
