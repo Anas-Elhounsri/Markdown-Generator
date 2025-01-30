@@ -53,7 +53,7 @@ def generate_rq3_tables(rq_number=3, output_dir="tables"):
                 "other": rq32["other"]
             }
 
-    # Table 1 - Releases and Consistency
+    # Table 1
     table1.append(
         f"| Releases | {release_data['escape']['releases']:.2f}% | "
         f"{release_data['panosc']['releases']:.2f}% | "
@@ -68,7 +68,7 @@ def generate_rq3_tables(rq_number=3, output_dir="tables"):
         f"{release_data['rsd']['consistency']:.2f}% |"
     )
 
-    # Table 2 - Versioning Types
+    # Table 2
     for version_type in ["semantic", "calendar", "alphanumeric", "other"]:
         row = f"| {version_type.capitalize()} | "
         for cluster in ["escape", "panosc", "envri", "rsd"]:
