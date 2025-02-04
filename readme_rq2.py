@@ -7,9 +7,9 @@ def generate_rq_table(rq_number, output_dir="tables"):
     base_dir = script_dir / "calculations"
     rq_dir = base_dir / f"rq{rq_number}"
     
-    clusters = ["envri", "escape", "panosc", "rsd"]
+    clusters = ["envri", "escape", "lsri", "panosc", "rsd"]
     
-    table_headers = ["Archival infrastructures ", "ESCAPE", "PANOSC", "ENVRI", "RSD"]
+    table_headers = ["Metadata", "ESCAPE", "PANOSC", "LSRI", "ENVRI", "RSD"]
     row_mapping = {
         "swh": "Deposited in SWH ",
         "zenodo_doi": "Zenodo Badge",

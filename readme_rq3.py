@@ -8,7 +8,7 @@ def generate_rq3_tables(rq_number=3, output_dir="tables"):
     
     base_dir = Path("calculations")
     rq_dir = base_dir / f"rq{rq_number}"
-    clusters = ["envri", "escape", "panosc", "rsd"]
+    clusters = ["envri", "escape", "lsri", "panosc", "rsd"]
     
     data = {}
     for cluster in clusters:
@@ -23,15 +23,15 @@ def generate_rq3_tables(rq_number=3, output_dir="tables"):
     table1 = [
         "### RESULTS FOR RQ3: How do projects adopt versioning? (Distribution of Releases)",
         "",
-        "| Releases    | ESCAPE | PANOSC | ENVRI | RSD |",
-        "|-------------|--------|--------|-------|-----|"
+        "| Releases    | ESCAPE | PANOSC | LSRI | ENVRI | RSD |",
+        "|-------------|--------|--------|-------|-----|-----|"
     ]
 
     table2 = [
         "\n### RESULTS FOR RQ3: How do projects adopt versioning? (Types of versioning)}",
         "",
-        "| Type of Release | ESCAPE | PANOSC | ENVRI | RSD |",
-        "|-----------------|--------|--------|-------|-----|"
+        "| Type of Release | ESCAPE | PANOSC | LSRI | ENVRI | RSD |",
+        "|-------------|--------|--------|-------|-----|-----|"
     ]
 
     release_data = {}
@@ -57,6 +57,7 @@ def generate_rq3_tables(rq_number=3, output_dir="tables"):
     table1.append(
         f"| Releases | {release_data['escape']['releases']:.2f}% | "
         f"{release_data['panosc']['releases']:.2f}% | "
+        f"{release_data['lsri']['releases']:.2f}% | "
         f"{release_data['envri']['releases']:.2f}% | "
         f"{release_data['rsd']['releases']:.2f}% |"
     )
@@ -64,6 +65,7 @@ def generate_rq3_tables(rq_number=3, output_dir="tables"):
     table1.append(
         f"| Consistent Version Naming Scheme | {release_data['escape']['consistency']:.2f}% | "
         f"{release_data['panosc']['consistency']:.2f}% | "
+        f"{release_data['lsri']['consistency']:.2f}% | "
         f"{release_data['envri']['consistency']:.2f}% | "
         f"{release_data['rsd']['consistency']:.2f}% |"
     )
@@ -71,7 +73,7 @@ def generate_rq3_tables(rq_number=3, output_dir="tables"):
     # Table 2
     for version_type in ["semantic", "calendar", "alphanumeric", "other"]:
         row = f"| {version_type.capitalize()} | "
-        for cluster in ["escape", "panosc", "envri", "rsd"]:
+        for cluster in ["escape", "panosc", "lsri", "envri", "rsd"]:
             value = versioning_data[cluster][version_type]
             row += f"{value:.2f}% | "
         table2.append(row)

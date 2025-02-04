@@ -1,6 +1,6 @@
-<table><thead><tr><td colspan='5'><b>RESULTS FOR RQ1: HOW DO COMMUNITIES DESCRIBE RS METADATA</b></td></tr></thead>
+<table><thead><tr><td colspan='6'><b>RESULTS FOR RQ1: HOW DO COMMUNITIES DESCRIBE RS METADATA</b></td></tr></thead>
 <tbody>
-<tr><td>Metadata</td><td>ESCAPE</td><td>PANOSC</td><td>ENVRI</td><td>RSD</td></tr>
+<tr><td>Metadata</td><td>ESCAPE</td><td>PANOSC</td><td>LSRI</td><td>ENVRI</td><td>RSD</td></tr>
 <tr><td>CFF file</td><td>5.88%</td><td>4.76%</td><td>1.17%</td><td>60.65%</td></tr>
 <tr><td>README</td><td>100.00%</td><td>95.24%</td><td>97.66%</td><td>99.07%</td></tr>
 <tr><td>Package file</td><td>41.18%</td><td>52.38%</td><td>17.58%</td><td>60.65%</td></tr>
