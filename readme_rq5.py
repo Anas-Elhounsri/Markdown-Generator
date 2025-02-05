@@ -9,7 +9,7 @@ def generate_rq_table(rq_number, output_dir="tables"):
     
     clusters = ["envri", "escape", "lsri", "panosc", "rsd"]
     
-    table_headers = ["Citation Files", "ESCAPE", "PANOSC", "LSRI", "ENVRI", "RSD"]
+    table_headers = ["Citation Files", "ENVRI", "ESCAPE", "LSRI", "PANOSC", "RSD"]
     row_mapping = {
         "bib": ".bib",
         "cff": ".cff",
