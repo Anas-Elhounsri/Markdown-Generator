@@ -7,9 +7,9 @@ def generate_rq_table(rq_number, output_dir="tables"):
     base_dir = script_dir / "calculations"
     rq_dir = base_dir / f"rq{rq_number}"
     
-    clusters = ["envri", "escape", "panosc", "rsd"]
+    clusters = ["envri", "escape", "lsri", "panosc", "rsd"]
     
-    table_headers = ["Citation Files", "ESCAPE", "PANOSC", "ENVRI", "RSD"]
+    table_headers = ["Citation Files", "ESCAPE", "PANOSC", "LSRI", "ENVRI", "RSD"]
     row_mapping = {
         "bib": ".bib",
         "cff": ".cff",
@@ -39,7 +39,7 @@ def generate_rq_table(rq_number, output_dir="tables"):
     
     for json_key, display_name in row_mapping.items():
         row = [display_name]
-        for cluster in ["escape", "panosc", "envri", "rsd"]:  
+        for cluster in clusters:  
             if cluster in data and json_key in data[cluster]:
                 value = data[cluster][json_key]
                 formatted = f"{value:.2f}%" if isinstance(value, float) else f"{value}%"

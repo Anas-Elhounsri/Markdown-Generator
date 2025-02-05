@@ -23,14 +23,14 @@ def generate_rq3_tables(rq_number=3, output_dir="tables"):
     table1 = [
         "### RESULTS FOR RQ3: How do projects adopt versioning? (Distribution of Releases)",
         "",
-        "| Releases    | ESCAPE | PANOSC | LSRI | ENVRI | RSD |",
+        "| Releases    | ENVRI | ESCAPE | LSRI | PANOSC | RSD |",
         "|-------------|--------|--------|-------|-----|-----|"
     ]
 
     table2 = [
         "\n### RESULTS FOR RQ3: How do projects adopt versioning? (Types of versioning)}",
         "",
-        "| Type of Release | ESCAPE | PANOSC | LSRI | ENVRI | RSD |",
+        "| Type of Release | ENVRI | ESCAPE | LSRI | PANOSC | RSD |",
         "|-------------|--------|--------|-------|-----|-----|"
     ]
 
@@ -55,25 +55,25 @@ def generate_rq3_tables(rq_number=3, output_dir="tables"):
 
     # Table 1
     table1.append(
-        f"| Releases | {release_data['escape']['releases']:.2f}% | "
-        f"{release_data['panosc']['releases']:.2f}% | "
+        f"| Releases | {release_data['envri']['releases']:.2f}% | "
+        f"{release_data['escape']['releases']:.2f}% | "
         f"{release_data['lsri']['releases']:.2f}% | "
-        f"{release_data['envri']['releases']:.2f}% | "
+        f"{release_data['panosc']['releases']:.2f}% | "
         f"{release_data['rsd']['releases']:.2f}% |"
     )
     
     table1.append(
-        f"| Consistent Version Naming Scheme | {release_data['escape']['consistency']:.2f}% | "
-        f"{release_data['panosc']['consistency']:.2f}% | "
+        f"| Consistent Version Naming Scheme | {release_data['envri']['consistency']:.2f}% | "
+        f"{release_data['escape']['consistency']:.2f}% | "
         f"{release_data['lsri']['consistency']:.2f}% | "
-        f"{release_data['envri']['consistency']:.2f}% | "
+        f"{release_data['panosc']['consistency']:.2f}% | "
         f"{release_data['rsd']['consistency']:.2f}% |"
     )
 
     # Table 2
     for version_type in ["semantic", "calendar", "alphanumeric", "other"]:
         row = f"| {version_type.capitalize()} | "
-        for cluster in ["escape", "panosc", "lsri", "envri", "rsd"]:
+        for cluster in clusters:
             value = versioning_data[cluster][version_type]
             row += f"{value:.2f}% | "
         table2.append(row)

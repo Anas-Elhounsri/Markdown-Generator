@@ -1,15 +1,15 @@
 ### RESULTS FOR RQ3: How do projects adopt versioning? (Distribution of Releases)
 
-| Releases    | ESCAPE | PANOSC | LSRI | ENVRI | RSD |
+| Releases    | ENVRI | ESCAPE | LSRI | PANOSC | RSD |
 |-------------|--------|--------|-------|-----|-----|
-| Releases | 88.24% | 61.90% | 37.60% | 16.02% | 85.88% |
-| Consistent Version Naming Scheme | 80.00% | 76.92% | 74.69% | 80.49% | 76.55% |
+| Releases | 16.02% | 88.24% | 37.60% | 61.90% | 85.88% |
+| Consistent Version Naming Scheme | 80.49% | 80.00% | 74.69% | 76.92% | 76.55% |
 
-### RESULTS FOR RQ3: How do projects adopt versioning? (Types of versioning)}
+### RESULTS FOR RQ3: How do projects adopt versioning? (Types of versioning)
 
-| Type of Release | ESCAPE | PANOSC | LSRI | ENVRI | RSD |
+| Type of Release | ENVRI | ESCAPE | LSRI | PANOSC | RSD |
 |-------------|--------|--------|-------|-----|-----|
-| Semantic | 73.33% | 53.85% | 65.74% | 67.07% | 81.94% | 
+| Semantic | 67.07% | 73.33% | 65.74% | 53.85% | 81.94% | 
 | Calendar | 0.00% | 0.00% | 0.00% | 0.00% | 0.00% | 
-| Alphanumeric | 26.67% | 46.15% | 34.17% | 32.93% | 16.98% | 
+| Alphanumeric | 32.93% | 26.67% | 34.17% | 46.15% | 16.98% | 
 | Other | 0.00% | 0.00% | 0.09% | 0.00% | 1.08% | 

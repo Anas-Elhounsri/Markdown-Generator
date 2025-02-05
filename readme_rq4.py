@@ -8,7 +8,7 @@ def generate_rq4_tables(rq_number=4, output_dir="tables"):
     
     base_dir = Path("calculations")
     rq_dir = base_dir / f"rq{rq_number}"
-    clusters = ["envri", "escape", "panosc", "rsd"]
+    clusters = ["envri", "escape", "lsri", "panosc", "rsd"]
     
     data = {}
     for cluster in clusters:
@@ -23,22 +23,22 @@ def generate_rq4_tables(rq_number=4, output_dir="tables"):
     table1 = [
         "### RESULTS FOR RQ4-1: How do communities describe their software (short vs long)}",
         "",
-        "| Long vs Short Description     | ESCAPE | PANOSC | ENVRI | RSD |",
-        "|-------------|--------|--------|-------|-----|"
+        "| Long vs Short Description     | ENVRI | ESCAPE | LSRI | PANOSC | RSD |",
+        "|-------------|--------|--------|-------|-----|-----|"
     ]
 
     table2 = [
         "\n### RESULTS FOR RQ4-2: How do communities adopt licensing their projects?}",
         "",
-        "| Licenses | ESCAPE | PANOSC | ENVRI | RSD |",
-        "|-----------------|--------|--------|-------|-----|"
+        "| Licenses | ENVRI | ESCAPE | LSRI | PANOSC | RSD |",
+        "|-----------------|--------|--------|-------|-----|-----|"
     ]
 
     table3 = [
         "\n### RESULTS FOR RQ4-3: How well documented are research projects?}}",
         "",
-        "| Installation Instructions  | ESCAPE | PANOSC | ENVRI | RSD |",
-        "|-----------------|--------|--------|-------|-----|"
+        "| Installation Instructions  | ENVRI | ESCAPE | LSRI | PANOSC | RSD |",
+        "|-----------------|--------|--------|-------|-----|-----|"
     ]
 
     desc_data = {}
@@ -71,7 +71,7 @@ def generate_rq4_tables(rq_number=4, output_dir="tables"):
     # Table 1
     for desc_type in ["long desc", "short desc", "None"]:
         row = f"| {desc_type.capitalize()} | "
-        for cluster in ["escape", "panosc", "envri", "rsd"]:
+        for cluster in clusters:
             value = desc_data[cluster][desc_type]
             row += f"{value:.2f}% | "
         table1.append(row)
@@ -79,7 +79,7 @@ def generate_rq4_tables(rq_number=4, output_dir="tables"):
     # Table 2
     for spdx_type in ["spdx", "other", "no license"]:
         row = f"| {spdx_type.capitalize()} | "
-        for cluster in ["escape", "panosc", "envri", "rsd"]:
+        for cluster in clusters:
             value = spdx_data[cluster][spdx_type]
             row += f"{value:.2f}% | "
         table2.append(row)
@@ -87,7 +87,7 @@ def generate_rq4_tables(rq_number=4, output_dir="tables"):
     # Table 3
     for inst_intruc_type in ["requirements", "installation", "documentation"]:
         row = f"| {inst_intruc_type.capitalize()} | "
-        for cluster in ["escape", "panosc", "envri", "rsd"]:
+        for cluster in clusters:
             value = inst_intruc[cluster][inst_intruc_type]
             row += f"{value:.2f}% | "
         table3.append(row)

@@ -9,7 +9,7 @@ def generate_rq_table(rq_number, output_dir="tables"):
     
     clusters = ["envri", "escape", "lsri", "panosc", "rsd"]
     
-    table_headers = ["Metadata", "ESCAPE", "PANOSC", "LSRI", "ENVRI", "RSD"]
+    table_headers = ["Metadata", "ENVRI", "ESCAPE", "LSRI", "PANOSC", "RSD"]
     row_mapping = {
         "swh": "Deposited in SWH ",
         "zenodo_doi": "Zenodo Badge",
@@ -37,7 +37,7 @@ def generate_rq_table(rq_number, output_dir="tables"):
     
     for json_key, display_name in row_mapping.items():
         row = [display_name]
-        for cluster in ["escape", "panosc", "envri", "rsd"]:  
+        for cluster in clusters:  
             if cluster in data and json_key in data[cluster]:
                 value = data[cluster][json_key]
                 formatted = f"{value:.2f}%" if isinstance(value, float) else f"{value}%"
