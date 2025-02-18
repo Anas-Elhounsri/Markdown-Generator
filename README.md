@@ -31,3 +31,8 @@ After you choose the research question (for example 1) you will get the followin
  ```
  
 You will find your results in tables\
+
+## Ackowlegement:
+The authors acknowledge the OSCARS project, which has received funding from the European Commission's Horizon Europe Research and Innovation programme under grant agreement No. 101129751
+
+<img src="logo.png" alt="logo"/>
