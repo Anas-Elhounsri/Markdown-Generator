@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/924451715.svg)](https://doi.org/10.5281/zenodo.14925168)
+
 > [!WARNING]
 > This is still in progress and subject to change, as additional requirements may arise.
 > 
