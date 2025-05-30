@@ -1,0 +1,17 @@
+[project]
+name = "markdown-generator"
+version = "0.1.0"
+description = "This python script generates tables based on calculations done for 5 scientific clusters (ESCAPE, PANOSC, LSRI, ENVRI, RSD)"
+authors = [
+    {name = "Anas-Elhounsri",email = "elhounsri.anas@gmail.com"}
+]
+license = {text = "Apache-2.0 license"}
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

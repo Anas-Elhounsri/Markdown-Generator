@@ -8,7 +8,7 @@
 This python script generates tables based on calculations done for 5 scientific clusters (ESCAPE, PANOSC, LSRI, ENVRI, RSD)
 
 ## Requirements
-Python 3.11.1
+Python >= 3.12
 
 ## How does it work?
 
